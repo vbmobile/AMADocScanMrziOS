@@ -1,1 +1,1 @@
-@_exported import mdi-mob-sdk-doc-scanner-ios
+@_exported import mdi_mob_sdk_doc_scanner_ios
