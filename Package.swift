@@ -19,14 +19,16 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "mdi-mob-sdk-doc-scanner-ios",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocScanMrziOS/mdi-mob-sdk-doc-scanner-ios-1.0.0-rc03.zip",
-            checksum: "9be0f60846776eda3daf919dcc3c57307d66cb35c1b717a7482065147531a191"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocScanMrziOS/mdi-mob-sdk-doc-scanner-ios-1.0.0-rc04.zip",
+            checksum: "7caacd6d7115ae9bc70af6ab00109e79c3901df7c693d02c3ba882882ad4ba6e"
         ),
         .target(
             name: "AMADocScanMrziOS",
-            dependencies: ["mdi-mob-sdk-doc-scanner-ios",
-                           .product(name: "AMADocModeliOS", package: "AMADocModeliOS"),
-                           .product(name: "AMADocScanneriOS", package: "AMADocScanneriOS"),],
+            dependencies: [
+                "mdi-mob-sdk-doc-scanner-ios",
+                .product(name: "AMADocModeliOS", package: "AMADocModeliOS"),
+                .product(name: "AMADocScanneriOS", package: "AMADocScanneriOS"),
+            ],
             path: "Sources"
         )
     ]
