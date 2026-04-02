@@ -13,7 +13,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/vbmobile/AMADocModeliOS", exact: "1.0.0-rc03"),
+        .package(url: "https://github.com/vbmobile/AMADocModeliOS", exact: "1.0.0-rc10"),
         .package(url: "https://github.com/vbmobile/AMADocScanneriOS", from: "4.1.10"),
     ],
     targets: [
