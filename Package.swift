@@ -13,14 +13,14 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/vbmobile/AMADocModeliOS", exact: "1.0.0-rc10"),
+        .package(url: "https://github.com/vbmobile/AMADocModeliOS", exact: "1.0.0-rc11"),
         .package(url: "https://github.com/vbmobile/AMADocScanneriOS", from: "4.1.10"),
     ],
     targets: [
         .binaryTarget(
             name: "mdi-mob-sdk-doc-scanner-ios",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocScanMrziOS/mdi-mob-sdk-doc-scanner-ios-1.0.0-rc10.zip",
-            checksum: "77d567502a63cf57be767499ba037179c00d5735eebbe7439a5851bcb709e6a2"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocScanMrziOS/mdi-mob-sdk-doc-scanner-ios-1.0.0-rc11.zip",
+            checksum: "d6f76fe1ee813b8cdf64d9f7c8f6734b2285e1fda670a525d85a40f939acfea5"
         ),
         .target(
             name: "AMADocScanMrziOS",
