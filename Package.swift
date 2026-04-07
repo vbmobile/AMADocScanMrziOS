@@ -1,6 +1,6 @@
 // swift-tools-version: 6.2
 import PackageDescription
-
+//
 let package = Package(
     name: "AMADocScanMrziOS",
     platforms: [
@@ -13,7 +13,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/vbmobile/AMADocModeliOS", exact: "1.0.0-rc12"),
+        .package(url: "https://github.com/vbmobile/AMADocModeliOS", exact: "1.0.0-rc13"),
         .package(url: "https://github.com/vbmobile/AMADocScanneriOS", from: "4.1.10"),
     ],
     targets: [
