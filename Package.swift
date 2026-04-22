@@ -9,27 +9,28 @@ let package = Package(
     products: [
         .library(
             name: "AMADocScanMrziOS",
-            targets: ["AMADocScanMrziOS"]
+            targets: ["AMADocScanMrziOSWrapper"]
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/vbmobile/AMADocModeliOS", exact: "1.0.0-rc24"),
-        .package(url: "https://github.com/vbmobile/AMADocScanneriOS", from: "4.1.10"),
+        .package(url: "https://github.com/vbmobile/AMADocModeliOS", .upToNextMinor(from: "1.0.0")),
+        .package(url: "https://github.com/vbmobile/AMADocScanneriOS", exact:"4.1.10"),
     ],
     targets: [
         .binaryTarget(
-            name: "mdi-mob-sdk-doc-scanner-ios",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocScanMrziOS/mdi-mob-sdk-doc-scanner-ios-1.0.0-rc17.zip",
-            checksum: "48d3f73e46df2d373f81462dee4f48fc02489d147e20e6061cb234e90c9b14b4"
+            name: "AMADocScanMrziOS",
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocScanMrziOS/AMADocScanMrziOS-1.0.0.zip",
+            checksum: "5c4a6c8d5082e2cb022f33a69ba7f6400da0c30ea82848f93879211d186cb968"
         ),
         .target(
-            name: "AMADocScanMrziOS",
+            name: "AMADocScanMrziOSWrapper",
             dependencies: [
-                "mdi-mob-sdk-doc-scanner-ios",
+                "AMADocScanMrziOS",
                 .product(name: "AMADocModeliOS", package: "AMADocModeliOS"),
                 .product(name: "AMADocScanneriOS", package: "AMADocScanneriOS"),
             ],
-            path: "Sources"
+            path: "Sources",
+            sources: ["AMADocScanMrziOS.swift"]
         )
     ]
 )
