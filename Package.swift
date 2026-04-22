@@ -25,7 +25,7 @@ let package = Package(
         .target(
             name: "AMADocScanMrziOSWrapper",
             dependencies: [
-                "AMADocScanMrziOS",
+                .target(name: "AMADocScanMrziOS"),
                 .product(name: "AMADocModeliOS", package: "AMADocModeliOS"),
                 .product(name: "AMADocScanneriOS", package: "AMADocScanneriOS"),
             ],
