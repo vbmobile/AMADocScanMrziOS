@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/vbmobile/AMADocModeliOS", .upToNextMinor(from: "1.0.0")),
-        .package(url: "https://github.com/vbmobile/AMADocScanneriOS", exact:"4.1.10"),
+        .package(url: "https://github.com/vbmobile/AMADocScanneriOS", .upToNextMinor(from: "4.1.12")),
     ],
     targets: [
         .binaryTarget(
