@@ -19,8 +19,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AMADocScanMrziOS",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocScanMrziOS/AMADocScanMrziOS-1.0.3.zip",
-            checksum: "362baf5acf9ecc9385b1715616eabc069e53b2fcca12134ebd12169e7b5b0918"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocScanMrziOS/AMADocScanMrziOS-2.0.0.zip",
+            checksum: "46c8a43a6d2d6c14250f93ab98d7d42463fb2e90c14e19510fc901e62adfcdd1"
         ),
         .target(
             name: "AMADocScanMrziOSWrapper",
