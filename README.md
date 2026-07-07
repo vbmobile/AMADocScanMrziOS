@@ -1,5 +1,15 @@
 # AMADocScanMrziOS
 
+⚠️ This repository has been archived and superseded.
+
+Development has moved to vbmobile/AMADocScanMrz.
+
+New SPM URL: https://github.com/vbmobile/AMADocScanMrz
+Latest version: see the new repo's releases page.
+Consumers should update their Package.swift .package(url:) to the new URL. See the new repo's README for migration guidance.
+
+---
+
 High-level MRZ document scanning and processing SDK for iOS. Wraps the native scanning engine with document model support for seamless integration.
 
 ## Requirements
